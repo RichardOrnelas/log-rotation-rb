@@ -55,10 +55,10 @@ puts "#{count}"
 
 if count > 5
 	puts "Some Files need to be deleted"
-	# Get Files in Directory, sorted by age
-	# Remove the oldest
+	files = Dir[File.join(dir, '*.log')].sort_by { |filename| File.mtime(filename) }.first
+	File.delete("#{files}")
+	puts "I just deleted #{files}"
 else
 	puts "everything is chill"
 end
 }
-
