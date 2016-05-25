@@ -1,0 +1,3 @@
+/Users/rich/GitHub/log-rotation-rb/logs/a.log
+/Users/rich/GitHub/log-rotation-rb/logs/some/b.log
+/Users/rich/GitHub/log-rotation-rb/logs/some/more/c.log
