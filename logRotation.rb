@@ -1,12 +1,8 @@
 #!/usr/bin/ruby
-# Files Paths
-# logs/a.log , logs/some/b.log, logs/some/more/c.log
-
+# Log List file path
+log_list = "/Users/rich/GitHub/log-rotation-rb/log_list.txt"
 # File Size Limit (FSL)
 fsl = 500000
-
-# Log List file path
-log_list = "/log-rotation-rb/log_list.txt"
 
 #Add contents of each line in log_list as an element in the array logsArray
 f = File.open("#{log_list}" , "r")
@@ -15,7 +11,7 @@ f.each_line { |line|
 logsArray.push line.chomp
 }
 
-#Go through log file and check size
+#Go through log file and parse
 logsArray.each { |log|
 f = File.open("#{log}")
 #Extract name segments as variables
