@@ -12,6 +12,6 @@ older than that.
 
 ## Example Source Log File
 
-/some/path/to/a.log
-/some/other/path/to/b.log
-/path/to/c.log
+> /some/path/to/a.log
+> /some/other/path/to/b.log
+> /path/to/c.log
